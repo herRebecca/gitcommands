@@ -6,6 +6,11 @@
     font-family: sans-serif;
    }
 
+   html, body{
+    background-color: black;
+    overscroll-behavior: none;
+   }
+
 .navbar{
     background:black;
     display: flex;
