@@ -13,7 +13,6 @@
 
 .navbar{
     background:black;
-    display: flex;
     height:70px;
     z-index: 999;
     position: sticky;
@@ -28,6 +27,7 @@
     z-index: 1;
     width: 100%;
     font-size: 1.2rem;
+    height: 100%;
    }
 
 #iconspace{
@@ -38,12 +38,17 @@
    -webkit-background-clip: text;
    -moz-text-fill-color:transparent;
    -webkit-text-fill-color:transparent;
-    width: 100%;
-   display: flex;
    cursor: pointer;
    margin-left: 34px;
+   background-size: 100% 200%;
+   background-position: bottom;
+   transition: background-position 0.5s ease;
    }
 
+   #iconspace:hover{
+    background-position: top;
+    transition: 0.5s ;
+   }
 .fa-gem{
     margin-right: 0.5rem;
    }
@@ -61,9 +66,7 @@ div ul li{
    }
 .list_item{
     color:white;
-    display: flex;
     position: relative;
-    align-items: center;
     transition: 0.35s;
    }
 .list_item::after{
@@ -136,11 +139,11 @@ button:hover::after{
     height: 100vh;
     display: flex;
     align-items: center;
-
+    
 }
 .word_cont{
-    margin-left: 150px;
- margin-right: 250px;
+ margin-left: 150px;
+ margin-right: 250px; 
 }
 
 .word_cont h1{
@@ -181,10 +184,77 @@ button:hover::after{
   }
 
   .image_cont{
-    padding: 0 15px;
+    padding: 0 20px;
   }
  
   .images{
     height: 85%;
     width:85%;
   }
+  .typewriter {
+  font-size: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid white;
+  padding-right: 2px;
+  width: 0;
+  margin-top: 100px;
+  margin-bottom: 70px;
+  margin-left: 70px;
+  font-family: monospace;
+
+
+  background-image: linear-gradient(to top, #ff0844, #ffb199);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: typing 10s steps(13, end) infinite,
+             blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  0%   { width: 0; }
+  40%  { width: 13ch; } 
+  90%  { width: 13ch; }  
+  100% { width: 0; }     
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+ .lecture{
+  height: 600px;
+ }
+ .git{
+  color: white ;
+  text-align: center;
+  font-size: 2.5rem;
+ }
+ .gitt{
+  display: inline-block;
+  position: relative;
+  transition: color 0.35s;
+   }
+.gitt::after{
+    content: '';
+    width: 0%;
+    background-color: brown;
+    height:2px;
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    border-radius: 4px;
+    transition: width 0.35s ease, left 0.35s ease;
+   }
+.gitt:hover{
+    color: brown;
+    cursor: pointer;
+   }
+
+.gitt:hover::after{     
+    width: 60%;
+    
+}

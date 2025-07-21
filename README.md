@@ -36,10 +36,10 @@ git push "origin" git-status
 📚 Table of Contents (Git Command Branches)
 Git Command	Branch Name	Contributor
 git init	git-init	@esther
-git clone	git-clone	@bob
-git commit	git-commit	@yourname
-git push	git-push	(add yours)
-Add yours here	your-branch	your-name
+git clone	git-clone	@esther
+git commit	git-commit	@esther
+git push	git-push	@esther
+
 
 🔗 You can view each branch in GitHub by switching branches in the dropdown.
 
