@@ -225,7 +225,7 @@ button:hover::after{
 }
 
  .lecture{
-  height: 900px;
+  
  }
 
  .git{
@@ -289,9 +289,28 @@ color: white;
 }
 
 .add{
-  background-image: linear-gradient(to bottom, rgba(255,255,255,0.2)100%),url(images/git-add.png);
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.6)100%),url(images/git-add.png);
   color:black;
 }
+
+.commit{
+  margin-left: 160px;
+  background-image: linear-gradient(to bottom,rgba(255,255,255,0.8)100%),url(images/commit.jpg);
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .gits ul {
   list-style: disc;
