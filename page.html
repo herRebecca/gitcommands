@@ -75,6 +75,19 @@
                       ✅ <strong>Safe to use multiple times:</strong> Running <code>git init</code> again on the same directory won’t overwrite existing data in the Git directory.
                         </p>
 </div>
+<div class="gits add">
+                <h1>GIT ADD</h1>
+                 <p>The git add command is used to stage changes in your working directory for the next commit. It allows you to select which changes you want to include in the next commit, making it a crucial step in the Git workflow.</p>
+                 <p>When you run git add, you can specify individual files, directories, or use wildcards to stage multiple files at once. For example:</p>
+                 <ul>
+                     <li><code>git add file.txt</code> stages a specific file.</li>
+                     <li><code>git add .</code> stages all changes in the current directory and its subdirectories.</li>
+                     <li><code>git add *.txt</code> stages all text files in the current directory.</li>
+                 </ul>
+                 <p>You can also use git add with options like -A to stage all changes (including deletions) or -u to stage only tracked files that have been modified or deleted.</p>
+                 <p>Remember that git add does not commit the changes; it only stages them. You need to follow up with git commit to create a new commit with the staged changes.</p>
+         </div>
+
 
             
          
