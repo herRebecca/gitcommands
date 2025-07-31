@@ -303,7 +303,11 @@ color: white;
   color:black;
 }
 
-
+.pull{ 
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.7)100%),url(images/gitpull.jpg);
+  color:black;
+  margin-left: 260px;
+}
 
 
 
