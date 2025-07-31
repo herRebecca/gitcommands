@@ -125,7 +125,32 @@
                     <p>Using git pull regularly helps you stay synchronized with the remote repository and avoid conflicts when collaborating with others.</p>
          </div>
 
-            
+ <div class="gits merge">
+  <h1>GIT MERGE</h1>
+  <p><strong>Git merge</strong> is used to combine changes from one branch into another. It's a safe way to integrate features, updates, or bug fixes into your main codebase.</p>
+
+  <p><strong>How to use:</strong></p>
+  <ul>
+    <li>
+      Switch to the branch you want to merge into:
+      <pre><code>git checkout main</code></pre>
+    </li>
+    <li>
+      Merge the other branch:
+      <pre><code>git merge feature-branch</code></pre>
+    </li>
+    <li>
+      If needed, resolve merge conflicts and commit.
+    </li>
+    <li>
+      (Optional) Delete the feature branch:
+      <pre><code>git branch -d feature-branch</code></pre>
+    </li>
+  </ul>
+
+  <p><em>Note:</em> Git performs a fast-forward merge if there's no divergence. Otherwise, it creates a merge commit.</p>
+</div>
+           
          
          </div>
          </div>
