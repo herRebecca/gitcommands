@@ -298,8 +298,10 @@ color: white;
   background-image: linear-gradient(to bottom,rgba(255,255,255,0.8)100%),url(images/commit.jpg);
   color: black;
 }
-
-
+.branch{
+  background-image:linear-gradient(to bottom,rgba(255,255,255,0.8)100%),url(images/gitbranch.jpg);
+  color:black;
+}
 
 
 
