@@ -72,11 +72,85 @@
                        </p>
 
                         <p>
-                      ✅ <strong>Safe to use multiple times:</strong> Running <code>git init</code> again on the same directory won’t overwrite existing data in the Git directory.
+                      <strong>Safe to use multiple times:</strong> Running <code>git init</code> again on the same directory won’t overwrite existing data in the Git directory.
                         </p>
 </div>
+<div class="gits add">
+                <h1>GIT ADD</h1>
+                 <p>The git add command is used to stage changes in your working directory for the next commit. It allows you to select which changes you want to include in the next commit, making it a crucial step in the Git workflow.</p>
+                 <p>When you run git add, you can specify individual files, directories, or use wildcards to stage multiple files at once. For example:</p>
+                 <ul>
+                     <li><code>git add file.txt</code> stages a specific file.</li>
+                     <li><code>git add .</code> stages all changes in the current directory and its subdirectories.</li>
+                     <li><code>git add *.txt</code> stages all text files in the current directory.</li>
+                 </ul>
+                 <p>You can also use git add with options like -A to stage all changes (including deletions) or -u to stage only tracked files that have been modified or deleted.</p>
+                 <p>Remember that git add does not commit the changes; it only stages them. You need to follow up with git commit to create a new commit with the staged changes.</p>
+         </div>
 
-            
+ <div class="gits commit">
+                    <h1>GIT COMMIT</h1>
+                    <p>The git commit command is used to save changes to your local repository. It creates a new commit with the staged changes, allowing you to track the history of your project.</p>
+                    <p>When you run git commit, you can include a message that describes the changes made in that commit. This message is important for understanding the purpose of the commit later on.</p>
+                    <p>For example:</p>
+                    <ul>
+                        <li><code>git commit -m "Added new feature"</code> creates a commit with the specified message.</li>
+                        <li><code>git commit -a</code> stages all modified files and commits them in one step.</li>
+                    </ul>
+                    <p>Remember that git commit only affects your local repository. To share your changes with others, you need to push them to a remote repository using git push.</p>
+         </div>
+
+           <div class=" gits branch">
+                    <h1>GIT BRANCH</h1>
+                    <p>The git branch command is used to manage branches in your Git repository. Branches allow you to work on different features or versions of your project simultaneously without affecting the main codebase.</p>
+                    <p>When you run git branch, it lists all the branches in your repository and highlights the current branch you are on. You can also create new branches, delete existing ones, and rename them.</p>
+                    <p>For example:</p>
+                    <ul>
+                        <li><code>git branch new-feature</code> creates a new branch called "new-feature".</li>
+                        <li><code>git branch -d old-feature</code> deletes the "old-feature" branch.</li>
+                        <li><code>git checkout -b another-feature</code> creates and switches to a new branch called "another-feature".</li>
+                    </ul>
+                    <p>Branches are essential for collaborative development, allowing multiple developers to work on different features without interfering with each other's work. You can merge branches later using git merge.</p>
+                    
+         </div>
+<div class=" gits pull">
+                    <h1>GIT PULL</h1>
+                    <p>The git pull command is used to fetch and integrate changes from a remote repository into your local repository. It combines two operations: git fetch and git merge.</p>
+                    <p>When you run git pull, Git retrieves the latest changes from the specified remote branch and merges them into your current branch. This is useful for keeping your local repository up-to-date with the latest changes made by others.</p>
+                    <p>For example:</p>
+                    <ul>
+                        <li><code>git pull origin main</code> fetches changes from the "main" branch of the "origin" remote repository and merges them into your current branch.</li>
+                        <li><code>git pull --rebase</code> applies the fetched changes on top of your local commits, creating a linear history.</li>
+                    </ul>
+                    <p>Using git pull regularly helps you stay synchronized with the remote repository and avoid conflicts when collaborating with others.</p>
+         </div>
+
+ <div class="gits merge">
+  <h1>GIT MERGE</h1>
+  <p><strong>Git merge</strong> is used to combine changes from one branch into another. It's a safe way to integrate features, updates, or bug fixes into your main codebase.</p>
+
+  <p><strong>How to use:</strong></p>
+  <ul>
+    <li>
+      Switch to the branch you want to merge into:
+      <pre><code>git checkout main</code></pre>
+    </li>
+    <li>
+      Merge the other branch:
+      <pre><code>git merge feature-branch</code></pre>
+    </li>
+    <li>
+      If needed, resolve merge conflicts and commit.
+    </li>
+    <li>
+      (Optional) Delete the feature branch:
+      <pre><code>git branch -d feature-branch</code></pre>
+    </li>
+  </ul>
+
+  <p><em>Note:</em> Git performs a fast-forward merge if there's no divergence. Otherwise, it creates a merge commit.</p>
+</div>
+           
          
          </div>
          </div>
