@@ -88,7 +88,7 @@ git push origin git-status
 | git commit  | git-commit  | @esther |
 | git push    | git-push    | @esther |
 
-🔗 You can explore each branch on GitHub by switching branches using the branch dropdown menu.
+ You can explore each branch on GitHub by switching branches using the branch dropdown menu.
 
 ---
 
