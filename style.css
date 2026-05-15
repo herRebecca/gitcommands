@@ -288,6 +288,40 @@ background-image: linear-gradient(to bottom, rgba(255,255,255,0.2), rgba(0,0,0,0
 color: white;
 }
 
+.add{
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.6)100%),url(images/git-add.png);
+  color:black;
+}
+
+.commit{
+  margin-left: 160px;
+  background-image: linear-gradient(to bottom,rgba(255,255,255,0.8)100%),url(images/commit.jpg);
+  color: black;
+}
+.branch{
+  background-image:linear-gradient(to bottom,rgba(255,255,255,0.8)100%),url(images/gitbranch.jpg);
+  color:black;
+}
+
+.pull{ 
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0.7)100%),url(images/gitpull.jpg);
+  color:black;
+  margin-left: 280px;
+}
+.merge{
+  background-image:linear-gradient(to bottom, rgba(255,255,255,0.7)100%),url(images/merge.jpg);
+  color:black;
+}
+
+h1:hover{
+  color: brown;
+}
+
+
+
+
+
+
 
 .gits ul {
   list-style: disc;
